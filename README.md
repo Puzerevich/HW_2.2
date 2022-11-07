@@ -1,4 +1,4 @@
-# HW_2.2
+# HW_4.2
 <b>JavaPro_21_10_2022</br>
 Home Work_4 v.2</br>
 Тема: Успадкування в Java</br>
