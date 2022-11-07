@@ -24,11 +24,11 @@ public class Cat extends Animal{
     // Methods
     // RUN
     public String runResult(){
-        if(getRun_Distance()<=500){
-            return super.getName()+" пробіг "+getRun_Distance()+" м.";
+        if(getRunDistance()<=500){
+            return super.getName()+" пробіг "+ getRunDistance()+" м.";
         }
         else{
-            return getName()+" не зміг пробігти "+getRun_Distance()+"м. Коти можуть пробігти не більше 200 м.";
+            return getName()+" не зміг пробігти "+ getRunDistance()+"м. Коти можуть пробігти не більше 200 м.";
         }
     }
     // SWIM
@@ -41,7 +41,7 @@ public class Cat extends Animal{
 
     @Override
     public String getCount() {
-        return "Об'єктів класу CAT створено: "+Integer.toString(catCount);
+        return "Об'єктів класу Animal створено:"+Integer.toString(animalCount)+" Об'єктів класу CAT створено: "+Integer.toString(catCount);
     }
 
 }

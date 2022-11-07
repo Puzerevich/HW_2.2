@@ -2,9 +2,9 @@ public class Animal {
     private String name;
     private int    age;
     private String color;
-    private int    run_Distance;
-    private int    swim_Distance;
-    private static int animalCount=0;
+    private int runDistance;
+    private int swimDistance;
+    protected static int animalCount=0;
 
     // Constructors
     Animal(){
@@ -45,20 +45,20 @@ public class Animal {
         this.age = age;
     }
 
-    public int getRun_Distance() {
-        return run_Distance;
+    public int getRunDistance() {
+        return runDistance;
     }
 
-    public void setRun_Distance(int run_Distance) {
-        this.run_Distance = run_Distance;
+    public void setRunDistance(int runDistance) {
+        this.runDistance = runDistance;
     }
 
-    public int getSwim_Distance() {
-        return swim_Distance;
+    public int getSwimDistance() {
+        return swimDistance;
     }
 
-    public void setSwim_Distance(int swim_Distance) {
-        this.swim_Distance = swim_Distance;
+    public void setSwimDistance(int swimDistance) {
+        this.swimDistance = swimDistance;
     }
 
     public String getColor() {
@@ -76,25 +76,25 @@ public class Animal {
 
     // Methods
     public int run(){
-        return getRun_Distance();
+        return getRunDistance();
     }
     public int run(int dist){
-        this.run_Distance = dist;
-        return getRun_Distance();
+        this.runDistance = dist;
+        return getRunDistance();
     }
     public String runResult(){
-        return Integer.toString(getRun_Distance());
+        return Integer.toString(getRunDistance());
     }
 
     public int swim(){
-        return getSwim_Distance();
+        return getSwimDistance();
     }
     protected int swim(int dist){
-        this.swim_Distance = dist;
-        return getSwim_Distance();
+        this.swimDistance = dist;
+        return getSwimDistance();
     }
     public String swimResult(){
-        return Integer.toString(getSwim_Distance());
+        return Integer.toString(getSwimDistance());
     }
 
     @Override
@@ -102,8 +102,8 @@ public class Animal {
         return "Animals{" +
                 "name='" + name + '\'' +
                 ", age=" + age +
-                ", run_Distance=" + run_Distance +
-                ", swim_Distance=" + swim_Distance +
+                ", run_Distance=" + runDistance +
+                ", swim_Distance=" + swimDistance +
                 ", color='" + color + '\'' +
                 '}';
     }

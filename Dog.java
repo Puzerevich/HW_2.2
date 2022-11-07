@@ -5,6 +5,7 @@ public class Dog extends Animal{
         //Constructors
         public Dog(){
             dogCount++;
+           // animalCount++;
         }
 
         public Dog(String name) {
@@ -25,31 +26,31 @@ public class Dog extends Animal{
         // Methods
         // RUN
         public String runResult(){
-            if(getRun_Distance()<=500){
-                return super.getName()+" пробіг "+getRun_Distance()+" м.";
+            if(getRunDistance()<=500){
+                return super.getName()+" пробіг "+ getRunDistance()+" м.";
             }
             else{
-                return getName()+" не зміг пробігти "+getRun_Distance()+"м. Собаки можуть пробігти не більше 500 м.";
+                return getName()+" не зміг пробігти "+ getRunDistance()+"м. Собаки можуть пробігти не більше 500 м.";
             }
         }
         // SWIM
         public String swimResult(){
-           if(getSwim_Distance()<=10){
-               return getName()+" проплив "+getSwim_Distance()+" м.";
+           if(getSwimDistance()<=10){
+               return getName()+" проплив "+ getSwimDistance()+" м.";
            }
            else{
-               return getName()+" не зміг проплити "+getSwim_Distance()+"м. Собаки можуть проплити не більше 10 м.";
+               return getName()+" не зміг проплити "+ getSwimDistance()+"м. Собаки можуть проплити не більше 10 м.";
            }
         }
 
         public String Result(int dist){
-               setSwim_Distance(dist);
+               setSwimDistance(dist);
                return swimResult();
        }
 
         @Override
         public String getCount() {
-            return "Об'єктів класу DOG створено: "+Integer.toString(dogCount);
+            return "Об'єктів класу Animal створено:"+Integer.toString(animalCount)+" Об'єктів класу DOG створено: "+Integer.toString(dogCount);
         }
 
         @Override
@@ -57,8 +58,8 @@ public class Dog extends Animal{
             return "Dog{" +
                     "name='" + getName() + '\'' +
                     ", age=" + getAge() +
-                    ", run_Distance=" + getRun_Distance() +
-                    ", swim_Distance=" + getSwim_Distance() +
+                    ", run_Distance=" + getRunDistance() +
+                    ", swim_Distance=" + getSwimDistance() +
                     ", color='" + getColor() + '\'' +
                     '}';
         }

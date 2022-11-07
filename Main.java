@@ -1,10 +1,10 @@
 public class Main {
     public static void main(String[] args) {
-        Animal dog1 = new Animal("Жужік");
-        Dog dog2 = new Dog("Бобік");
-        Animal cat1 = new Animal("Рижик");
-        Cat cat2 = new Cat("Васька");
-        Cat cat3 = new Cat("Барон>");
+        Animal dog1 = new Dog("Жужік");
+        Animal dog2 = new Dog("Бобік");
+        Animal cat1 = new Cat("Рижик");
+        Animal cat2 = new Cat("Васька");
+        Animal cat3 = new Cat("Барон>");
 
         System.out.println(dog2.getName());
 
@@ -20,14 +20,19 @@ public class Main {
         System.out.println(dog2.runResult());
 
         for(Animal a: animalsArr){
-         //   System.out.println("Arr: "+a.run());
+        //   System.out.println("Arr: "+a.run());
             System.out.println(a.toString());
-       //     System.out.println("Dogs: :"+a.getCount());
+        //   System.out.println("Dogs: :"+a.getCount());
+
+            System.out.println(a.run(250));
+            System.out.println(a.runResult());
+            System.out.println("Count:"+a.getCount());//a.getCount());
+
         }
-        System.out.println("\n");
+        System.out.println("\nAnimals counting:");
          System.out.println(dog1.getCount());
          System.out.println(dog2.getCount());
          System.out.println(cat1.getCount());
-         System.out.println(cat2.getCount());
+         System.out.println();
     }
 }
