@@ -70,7 +70,8 @@ public class Animal {
     }
 
     public String getCount() {
-        return "Об'єктів класу ANIMAL створено: "+Integer.toString(animalCount);
+//        return "Об'єктів класу ANIMAL створено: "+Integer.toString(animalCount);
+        return Integer.toString(animalCount);
     }
 
     // Methods
@@ -82,8 +83,7 @@ public class Animal {
         return getRun_Distance();
     }
     public String runResult(){
-        String tmp = Integer.toString(getRun_Distance());
-        return tmp;
+        return Integer.toString(getRun_Distance());
     }
 
     public int swim(){
@@ -94,8 +94,7 @@ public class Animal {
         return getSwim_Distance();
     }
     public String swimResult(){
-        String tmp = Integer.toString(getSwim_Distance());
-        return tmp;
+        return Integer.toString(getSwim_Distance());
     }
 
     @Override
