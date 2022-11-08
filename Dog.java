@@ -50,7 +50,7 @@ public class Dog extends Animal{
 
         @Override
         public String getCount() {
-            return "Об'єктів класу Animal створено:"+Integer.toString(animalCount)+" Об'єктів класу DOG створено: "+Integer.toString(dogCount);
+            return "Об'єктів класу Animal створено:"+Integer.toString(animalCount)+" \nОб'єктів класу DOG створено: "+Integer.toString(dogCount);
         }
 
         @Override

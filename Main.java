@@ -8,7 +8,6 @@ public class Main {
 
         System.out.println(dog2.getName());
 
-
         dog1.run(200);
         System.out.println(dog1.run(200));
 
@@ -20,19 +19,18 @@ public class Main {
         System.out.println(dog2.runResult());
 
         for(Animal a: animalsArr){
-        //   System.out.println("Arr: "+a.run());
+        //  System.out.println("Arr: "+a.run());
             System.out.println(a.toString());
-        //   System.out.println("Dogs: :"+a.getCount());
+        //  System.out.println("Dogs: :"+a.getCount());
 
             System.out.println(a.run(250));
             System.out.println(a.runResult());
             System.out.println("Count:"+a.getCount());//a.getCount());
 
         }
-        System.out.println("\nAnimals counting:");
-         System.out.println(dog1.getCount());
-         System.out.println(dog2.getCount());
-         System.out.println(cat1.getCount());
-         System.out.println();
+            System.out.println("\nAnimals counting:");
+            System.out.println(dog1.getCount());
+            System.out.println(cat1.getCount());
+
     }
 }

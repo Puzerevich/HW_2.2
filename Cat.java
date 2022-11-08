@@ -41,7 +41,7 @@ public class Cat extends Animal{
 
     @Override
     public String getCount() {
-        return "Об'єктів класу Animal створено:"+Integer.toString(animalCount)+" Об'єктів класу CAT створено: "+Integer.toString(catCount);
+        return "Об'єктів класу Animal створено:"+Integer.toString(animalCount)+" \nОб'єктів класу CAT створено: "+Integer.toString(catCount);
     }
 
 }

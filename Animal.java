@@ -69,7 +69,7 @@ public class Animal {
         this.color = color;
     }
 
-    public String getCount() {
+    protected String getCount() {
 //        return "Об'єктів класу ANIMAL створено: "+Integer.toString(animalCount);
         return Integer.toString(animalCount);
     }
